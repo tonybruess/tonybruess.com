@@ -1,23 +1,24 @@
 $(document).ready(function() {
     $(".r").each(function() {
         var element = $(this);
-        var deg = $(this).css('word-spacing').replace('px', '');
+        var deg = element.data('rot');
+        var animate = {
+            rot : 0,
+            pos : 0,
+        };
 
-        element.css('transform', 'rotate(0deg) translate(0px) rotate(0deg)');
-        element.css('word-spacing', 0);
-
-        element.animate({borderRadius : 200, wordSpacing : deg}, {
+        $(animate).animate({rot : deg, pos : 200}, {
             step : function(now, fx) {
-                var trans = element.css('border-radius').replace('px', '');
-                var rot = element.css('word-spacing');
+                var pos = fx.elem.pos;
+                var rot = fx.elem.rot;
 
-                if(fx.prop == "borderRadius") {
-                    trans = now;
-                } else if(fx.prop == "wordSpacing") {
+                if(fx.prop == "pos") {
+                    pos = now;
+                } else if(fx.prop == "rot") {
                     rot = now;
                 }
 
-                element.css('transform', 'rotate(' + rot + 'deg) translate(' + trans + 'px) rotate(-' + rot + 'deg)')
+                element.css('transform', 'rotate(' + rot + 'deg) translate(' + pos + 'px) rotate(-' + rot + 'deg)')
             },
             duration : 1000,
         })
