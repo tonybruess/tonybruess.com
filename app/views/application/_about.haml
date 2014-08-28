@@ -18,5 +18,5 @@
                 %p You can find me on the internet:
                 %p#icons
                     - @media.each do |media|
-                        %a{:href => media[:url]}
+                        %a{:href => media[:url], :target => "_blank"}
                             %i.fa.fa-2x{:class => media[:fa], :title => media[:title], :rel => "tt-top"}
