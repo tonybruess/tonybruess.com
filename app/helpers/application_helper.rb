@@ -1,5 +1,14 @@
 module ApplicationHelper
-    def placehold(x, y)
-        "//placehold.it/" + x.to_s + "x" + y.to_s + "&text=Coming%20soon!&break.png"
+    def rot_to_tooltip(int)
+        case int
+        when 0, 45, 315
+            "tt-left"
+        when 135, 180, 225
+            "tt-right"
+        when 90
+            "tt-top"
+        else # 180
+            "tt-bottom"
+        end
     end
 end

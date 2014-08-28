@@ -1,0 +1,22 @@
+#about.modal.fade
+    .modal-dialog
+        .modal-content
+            .modal-header
+                %button.close{:data => {:dismiss => "modal"}} &times;
+                %h4.modal-title About Tony
+            .modal-body
+                %p My name is Tony Bruess. I am an 18 year old entrepreneur, thinker, and innovator with a passion for all things Apple.
+                %p
+                    I spend most of my time running the
+                    = succeed ',' do
+                        %a{:href => "https://oc.tc"} Overcast Network
+                    a Minecraft gaming service that provides software as a service to 100 thousand gamers every week.
+                %p
+                    I am interested in computer science and business. I will be attending
+                    %a{:href => "http://stanford.edu"} Stanford University
+                    this fall.
+                %p You can find me on the internet:
+                %p#icons
+                    - @media.each do |media|
+                        %a{:href => media[:url]}
+                            %i.fa.fa-2x{:class => media[:fa], :title => media[:title], :rel => "tt-top"}

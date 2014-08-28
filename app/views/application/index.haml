@@ -1,0 +1,10 @@
+.wrapper
+    .wrapper-inner
+        .circle
+            %a.center{:href => "#about", :data => {:toggle => "modal"}}
+                %img{:src => asset_path("tony.png"), :title => "About Tony", :rel => "tt-top"}
+            - @rots.each_with_index do |rot, i|
+                - next if !(media = @media[i])
+                %a.r{:href => media[:url], :class => "r#{rot}"}
+                    %i.fa{:class => media[:fa], :title => media[:title], :rel => rot_to_tooltip(rot)}
+= render :partial => "about"

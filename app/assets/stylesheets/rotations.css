@@ -1,0 +1,63 @@
+.circle > a.r0 {
+    -webkit-transform: translate(200px);
+       -moz-transform: translate(200px);
+        -ms-transform: translate(200px);
+         -o-transform: translate(200px);
+            transform: translate(200px);
+}
+
+.circle > a.r45 {
+    -webkit-transform: rotate(45deg) translate(200px) rotate(-45deg);
+       -moz-transform: rotate(45deg) translate(200px) rotate(-45deg);
+        -ms-transform: rotate(45deg) translate(200px) rotate(-45deg);
+         -o-transform: rotate(45deg) translate(200px) rotate(-45deg);
+            transform: rotate(45deg) translate(200px) rotate(-45deg);
+}
+
+.circle > a.r90 {
+    -webkit-transform: translate(0,200px);
+       -moz-transform: translate(0,200px);
+        -ms-transform: translate(0,200px);
+         -o-transform: translate(0,200px);
+            transform: translate(0,200px);
+}
+
+.circle > a.r135 {
+    -webkit-transform: rotate(135deg) translate(200px) rotate(-135deg);
+       -moz-transform: rotate(135deg) translate(200px) rotate(-135deg);
+        -ms-transform: rotate(135deg) translate(200px) rotate(-135deg);
+         -o-transform: rotate(135deg) translate(200px) rotate(-135deg);
+            transform: rotate(135deg) translate(200px) rotate(-135deg);
+}
+
+.circle > a.r180 {
+    -webkit-transform: translate(-200px);
+       -moz-transform: translate(-200px);
+        -ms-transform: translate(-200px);
+         -o-transform: translate(-200px);
+            transform: translate(-200px);
+}
+
+.circle > a.r225 {
+    -webkit-transform: rotate(225deg) translate(200px) rotate(-225deg);
+       -moz-transform: rotate(225deg) translate(200px) rotate(-225deg);
+        -ms-transform: rotate(225deg) translate(200px) rotate(-225deg);
+         -o-transform: rotate(225deg) translate(200px) rotate(-225deg);
+            transform: rotate(225deg) translate(200px) rotate(-225deg);
+}
+
+.circle > a.r270 {
+    -webkit-transform: translate(0,-200px);
+       -moz-transform: translate(0,-200px);
+        -ms-transform: translate(0,-200px);
+         -o-transform: translate(0,-200px);
+            transform: translate(0,-200px);
+}
+
+.circle > a.r315 {
+    -webkit-transform: rotate(315deg) translate(200px) rotate(-315deg);
+       -moz-transform: rotate(315deg) translate(200px) rotate(-315deg);
+        -ms-transform: rotate(315deg) translate(200px) rotate(-315deg);
+         -o-transform: rotate(315deg) translate(200px) rotate(-315deg);
+            transform: rotate(315deg) translate(200px) rotate(-315deg);
+}
