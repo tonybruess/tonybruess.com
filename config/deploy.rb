@@ -6,7 +6,7 @@ set :rvm_ruby_string, "ruby-2.1.2"
 set :rvm_type, :system
 
 set :application, "tonyb"
-set :repository, "git@github.com:OvercastNetwork/tonyb.io.git"
+set :repository, "git@github.com:mrapple/tonyb.io.git"
 
 set :scm, :git
 set :branch, 'master'
