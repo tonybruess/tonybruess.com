@@ -39,6 +39,7 @@ html, body {
     width: 175px;
     height: 175px;
     margin: -87.5px;
+    z-index: 1;
 }
 
 .circle a.r {
