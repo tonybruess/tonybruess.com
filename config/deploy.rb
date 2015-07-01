@@ -5,12 +5,12 @@ load "deploy/assets"
 set :rvm_ruby_string, "ruby-2.1.2"
 set :rvm_type, :system
 
-set :application, "tonyb"
-set :repository, "git@github.com:mrapple/tonyb.io.git"
+set :application, "tonybruess"
+set :repository, "git@github.com:tonybruess/tonybruess.com.git"
 
 set :scm, :git
 set :branch, 'master'
-set :deploy_to, "/home/deploy/apps/tonyb"
+set :deploy_to, "/home/deploy/apps/tonybruess"
 set :user, 'deploy'
 set :port, 50210
 set :use_sudo, false

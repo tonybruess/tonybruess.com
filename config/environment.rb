@@ -21,12 +21,12 @@ TonyB::Application.config.rots = [0, 45, 90, 135, 180, 225, 270, 315]
 TonyB::Application.config.media = [
     {
         :title => "Twitter",
-        :url => "https://twitter.com/Monsieur_Apple",
+        :url => "https://twitter.com/tonybruess",
         :fa => "fa-twitter",
     },
     {
         :title => "GitHub",
-        :url => "https://github.com/mrapple",
+        :url => "https://github.com/tonybruess",
         :fa => "fa-github",
     },
     {
@@ -41,7 +41,7 @@ TonyB::Application.config.media = [
     },
     {
         :title => "LinkedIn",
-        :url => "https://linkedin.com/pub/tony-bruess/66/17/b87",
+        :url => "https://linkedin.com/in/tonybruess",
         :fa => "fa-linkedin",
     },
     {
