@@ -7,20 +7,22 @@
             .modal-body
                 %p Hi there. My name is Tony Bruess.
                 %p
-                    I'm an 18 year old entrepreneur, thinker, and innovator. For my entire life I've had a passion for all things
-                    %a{:href => "http://apple.com"} Apple
+                    I'm a 19 year old entrepreneur, thinker, and innovator. For my entire life I've had a passion for all things
+                    %a{:href => "http://apple.com", :target => :blank} Apple
                     (hence the psuedonyms mrapple and MonsieurApple).
                 %p
                     I'm also the co-founder and CEO of the
                     = succeed ',' do
-                        %a{:href => "https://oc.tc"} Overcast Network
+                        %a{:href => "https://oc.tc", :target => :blank} Overcast Network
                     a Minecraft gaming service which provides software as a service to over 100,000 gamers every week.
                 %p
-                    Currently, I'm a first year student at
-                    %a{:href => "http://stanford.edu"} Stanford University
-                    with plans to study computer science and business.
+                    I just finished my first year at
+                    %a{:href => "http://stanford.edu", :target => :blank} Stanford University
+                    and I plan to major in Compuer Science. This summer I'm a Site Reliability Engineer Intern at
+                    = succeed '.' do
+                        %a{:href => "http://dropbox.com", :target => :blank} Dropbox
                 %p You can find me on the internet:
                 %p#icons
                     - @media.each do |media|
-                        %a{:href => media[:url], :target => "_blank"}
+                        %a{:href => media[:url], :target => :blank}
                             %i.fa.fa-2x{:class => media[:fa], :title => media[:title], :rel => "tt-top"}
