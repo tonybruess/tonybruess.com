@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
             session[:pride] = Time.now
             return redirect_to root_path
         else
-            session[:pride] = nil if session[:pride] && session[:pride] < 1.hour.ago
+            session[:pride] = nil if session[:pride] && session[:pride] < 30.seconds.ago
             @pride = true if session[:pride]
         end
     end
