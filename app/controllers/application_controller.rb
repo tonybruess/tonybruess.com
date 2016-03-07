@@ -9,11 +9,11 @@ class ApplicationController < ActionController::Base
     private
     def pride
         if params.has_key?(:pride)
-            session[:pride] = Time.now
+            session[:pride] = true
             return redirect_to root_path
         else
-            session[:pride] = nil if session[:pride] && session[:pride] < 30.seconds.ago
-            @pride = true if session[:pride]
+            @pride = session[:pride]
+            session[:pride] = nil
         end
     end
 end
