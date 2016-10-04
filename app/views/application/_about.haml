@@ -5,25 +5,27 @@
                 %button.close{:data => {:dismiss => "modal"}} &times;
                 %h4.modal-title About Tony
             .modal-body
-                %p Hi there. My name is Tony Bruess.
                 %p
-                    I'm a 20 year old entrepreneur, thinker, and innovator.
+                    Hi there. My name is Tony Bruess. I'm a 20 year old entrepreneur, thinker, and innovator.
                 %p
                     I co-founded the
                     = succeed ',' do
                         %a{:href => "https://oc.tc", :target => :blank} Overcast Network
-                    a Minecraft gaming service which was acquired by and rebranded as
-                    %a{:href => "http://lbsg.net", :target => :blank} Lifeboat Network
-                    in 2016.
+                    a popular Minecraft gaming service which was
+                    %a{:href => "https://oc.tc/forums/topics/57c74b3cc296350fd600002b", :target => :blank} acquired by and rebranded as Lifeboat Network
+                    on September 1st, 2016.
                 %p
                     I'm a junior at
                     %a{:href => "http://stanford.edu", :target => :blank} Stanford University
-                    majoring in computer science. The past two summers I've worked at
+                    majoring in computer science. The past two summers I was a Site Reliability Engineer at
                     %a{:href => "https://slack.com"} Slack
                     and
                     = succeed '.' do
                         %a{:href => "https://dropbox.com", :target => :blank} Dropbox
-                %p You can find me on the internet:
+                %p
+                    You can
+                    %a{:href => "/assets/resume.pdf"} check out my resume
+                    or find me on the internet:
                 %p#icons
                     - @media.each do |media|
                         %a{:href => media[:url], :target => :blank}
