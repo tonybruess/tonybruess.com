@@ -2,12 +2,21 @@
 layout: default
 ---
 
+<div class='pride'>
+    <div class='bar1'></div>
+    <div class='bar2'></div>
+    <div class='bar3'></div>
+    <div class='bar4'></div>
+    <div class='bar5'></div>
+    <div class='bar6'></div>
+</div>
+
 <div class='wrapper'>
     <div class='wrapper-inner'>
+        <a class='center' data-toggle='modal' href='#'>
+            <img rel='tt-top' src='/assets/tony.png' title='About Tony'>
+        </a>
         <div class='circle'>
-            <a class='center' data-toggle='modal' href='#about'>
-                <img rel='tt-top' src='/assets/tony.png' title='About Tony'>
-            </a>
             <a class='r' data-rot='0' href='http://reddit.com/u/MonsieurApple' target='_blank'>
                 <i class='fa fa-reddit-square' rel='tt-left' title='Reddit'></i>
             </a>
@@ -33,65 +42,38 @@ layout: default
                 <i class='fa fa-send' rel='tt-left' title='tony@oc.tc'></i>
             </a>
         </div>
-    </div>
-</div>
-<div class='modal fade' id='about'>
-    <div class='modal-dialog'>
-        <div class='modal-content'>
-            <div class='modal-header'>
-                <button class='close' data-dismiss='modal'>&times;</button>
-                <h4 class='modal-title'>About Tony</h4>
-            </div>
-            <div class='modal-body'>
-                <p>
-                    Hi there. My name is Tony Bruess. I'm a 20 year old entrepreneur.
-                </p>
-                <p>
-                    I co-founded the
-                    <a href='https://oc.tc' target='blank'>Overcast Network</a>,
-                    a popular Minecraft gaming service which was
-                    <a href='https://oc.tc/forums/topics/57c74b3cc296350fd600002b' target='blank'>acquired by and rebranded as Lifeboat Network</a>
-                    on September 1st, 2016.
-                </p>
-                <p>
-                    I'm a junior at
-                    <a href='http://stanford.edu' target='blank'>Stanford University</a>
-                    majoring in computer science. The past two summers I was a Site Reliability Engineer at
-                    <a href='https://slack.com'>Slack</a>
-                    and
-                    <a href='https://dropbox.com' target='blank'>Dropbox</a>.
-                </p>
-                <p>
-                    You can
-                    <a href='/assets/resume.pdf' target='blank'>check out my resume</a>
-                    or find me on the internet:
-                </p>
-                <p id='icons'>
-                    <a href='http://reddit.com/u/MonsieurApple' target='blank'>
-                        <i class='fa fa-2x fa-reddit-square' rel='tt-top' title='Reddit'></i>
-                    </a>
-                    <a href='https://linkedin.com/in/tonybruess' target='blank'>
-                        <i class='fa fa-2x fa-linkedin' rel='tt-top' title='LinkedIn'></i>
-                    </a>
-                    <a href='https://youtube.com/user/mrapplecomputer1' target='blank'>
-                        <i class='fa fa-2x fa-youtube-play' rel='tt-top' title='YouTube'></i>
-                    </a>
-                    <a href='http://twitch.tv/MonsieurApple' target='blank'>
-                        <i class='fa fa-2x fa-twitch' rel='tt-top' title='TwitchTV'></i>
-                    </a>
-                    <a href='https://facebook.com/tonybruess' target='blank'>
-                        <i class='fa fa-2x fa-facebook' rel='tt-top' title='Facebook'></i>
-                    </a>
-                    <a href='https://github.com/tonybruess' target='blank'>
-                        <i class='fa fa-2x fa-github' rel='tt-top' title='GitHub'></i>
-                    </a>
-                    <a href='https://twitter.com/tonybruess' target='blank'>
-                        <i class='fa fa-2x fa-twitter' rel='tt-top' title='Twitter'></i>
-                    </a>
-                    <a href='mailto:tony@oc.tc' target='blank'>
-                        <i class='fa fa-2x fa-send' rel='tt-top' title='tony@oc.tc'></i>
-                    </a>
-                </p>
+
+        <div id='about'>
+            <div class='modal-dialog'>
+                <div class='modal-content'>
+                    <div class='modal-header'>
+                        <h4 class='modal-title'>About Me</h4>
+                    </div>
+                    <div class='modal-body'>
+                        <p>
+                            Hi there. My name is Tony Bruess and I'm a 20 year old entrepreneur.
+                        </p>
+                        <p>
+                            I'm a junior at
+                            <a href='http://stanford.edu' target='blank'>Stanford University</a>
+                            majoring in computer science. The past two summers I was a Site Reliability Engineer at
+                            <a href='https://slack.com'>Slack</a>
+                            and
+                            <a href='https://dropbox.com' target='blank'>Dropbox</a>.
+                        </p>
+                        <p>
+                            I co-founded the
+                            <a href='https://oc.tc' target='blank'>Overcast Network</a>,
+                            a popular Minecraft gaming service which was
+                            <a href='https://oc.tc/forums/topics/57c74b3cc296350fd600002b' target='blank'>acquired by and rebranded as Lifeboat Network</a>
+                            on September 1st, 2016.
+                        </p>
+                        <p>
+                            You can
+                            <a href='/assets/resume.pdf' target='blank'>check out my resume</a> and email me <a href='mailto:tony@oc.tc'>tony@oc.tc</a>.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

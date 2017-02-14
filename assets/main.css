@@ -1,4 +1,5 @@
 html, body {
+    min-height: 100%;
     height: 100%;
     background-color: #333;
 }
@@ -9,7 +10,6 @@ a:focus {
 
 .wrapper {
     width: 100%;
-    height: 100%;
     min-height: 100%;
     -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
        -moz-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
@@ -18,14 +18,12 @@ a:focus {
             box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
+.circle {
+    margin-top: -100px;
+}
+
 .circle a {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 56px;
-    height: 56px;
-    margin: -28px; /* half the width */
     color: #aaa;
 }
 
@@ -34,16 +32,18 @@ a:focus {
     cursor: pointer;
 }
 
-.circle a.center {
+.center {
+    display: block;
     width: 175px;
-    height: 175px;
-    margin: -87.5px;
-    z-index: 1;
+    margin: 0 auto;
 }
 
 .circle a.r {
     text-shadow: 0px 0px 10px #222;
     text-align: center;
+    height: 0;
+    width: 56px;
+    margin: 0 auto;
 }
 
 .circle a.r i {
@@ -52,9 +52,16 @@ a:focus {
     font-size: 40px;
 }
 
-.circle > a > img {
+.center > img {
     display: block;
     width: 100%;
+    padding-top: 175px;
+}
+
+#about {
+    display: block;
+    margin-top: 300px;
+    padding-bottom: 50px;
 }
 
 #about #icons {
