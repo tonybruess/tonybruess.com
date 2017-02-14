@@ -2,170 +2,97 @@
 layout: default
 ---
 
-<div class="col col-left col-md-6">
-    <div class="text">
-        <h1>Hi, I'm Tony. 👋🏼</h1>
-        <h2>I ❤️ building scalable and reliable websites.</h2>
+<div class='wrapper'>
+    <div class='wrapper-inner'>
+        <div class='circle'>
+            <a class='center' data-toggle='modal' href='#about'>
+                <img rel='tt-top' src='/assets/tony.png' title='About Tony'>
+            </a>
+            <a class='r' data-rot='0' href='http://reddit.com/u/MonsieurApple' target='_blank'>
+                <i class='fa fa-reddit-square' rel='tt-left' title='Reddit'></i>
+            </a>
+            <a class='r' data-rot='45' href='https://linkedin.com/in/tonybruess' target='_blank'>
+                <i class='fa fa-linkedin' rel='tt-left' title='LinkedIn'></i>
+            </a>
+            <a class='r' data-rot='90' href='https://youtube.com/user/mrapplecomputer1' target='_blank'>
+                <i class='fa fa-youtube-play' rel='tt-top' title='YouTube'></i>
+            </a>
+            <a class='r' data-rot='135' href='http://twitch.tv/MonsieurApple' target='_blank'>
+                <i class='fa fa-twitch' rel='tt-right' title='TwitchTV'></i>
+            </a>
+            <a class='r' data-rot='180' href='https://facebook.com/tonybruess' target='_blank'>
+                <i class='fa fa-facebook' rel='tt-right' title='Facebook'></i>
+            </a>
+            <a class='r' data-rot='225' href='https://github.com/tonybruess' target='_blank'>
+                <i class='fa fa-github' rel='tt-right' title='GitHub'></i>
+            </a>
+            <a class='r' data-rot='270' href='https://twitter.com/tonybruess' target='_blank'>
+                <i class='fa fa-twitter' rel='tt-bottom' title='Twitter'></i>
+            </a>
+            <a class='r' data-rot='315' href='mailto:tony@oc.tc' target='_blank'>
+                <i class='fa fa-send' rel='tt-left' title='tony@oc.tc'></i>
+            </a>
+        </div>
     </div>
-    <div class="me">
-        <img src="/assets/tony.jpg">
-    </div>
-    <div class="color"></div>
 </div>
-
-<div class="col col-faux col-md-6"></div>
-
-<div class="col col-right col-md-6">
-    <h3>About Me</h3>
-    <p>
-        Hi there. My name is Tony Bruess and I'm a 20 year old entrepreneur.
-    </p>
-    <p>
-        I'm currently a junior at <a href="http://stanford.edu" target="blank">Stanford University</a>
-        majoring in computer science.
-    </p>
-
-    <p>
-        You can contact me at <a href="mailto:tony@oc.tc">tony@oc.tc</a>.
-    </p>
-
-
-    <h3>Work Experience</h3>
-    <div class="work">
-        <p class="title">
-            Operations Intern, <a href="https://slack.com" target="blank">Slack</a>
-            <small>June 2016 - Sept 2016</small>
-        </p>
-        <p>
-            Last summer I helped the Operations team at Slack make Slack even more scalable, reliable, and pleasent to use. At Slack I:
-        </p>
-        <ul>
-            <li>Helped transition metric system from Librato to Graphite</li>
-            <li>Deployed HAProxy load balancer in front of 3MM WebSocket connections</li>
-            <li>Improved AWS tooling used to provision new instances and create AMIs</li>
-        </ul>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            Site Reliability Engineer, <a href="https://dropbox.com" target="blank">Dropbox</a>
-            <small>June 2015 - June 2016</small>
-        </p>
-        <p>
-            I spent a year working part- and full-time on a wide range of projects focused on making Dropbox faster and more reliable. At Dropbox I:
-        </p>
-        <ul>
-            <li>Created visibility into Dropbox’s performance and availability from a client-side
-perspective and used new insights to fix previously unseen issues.</li>
-            <li>Reworked static content (CSS, JS, etc) storage, deployment, and distribution</li>
-            <li>Implemented auto renewal of SSL certificates and improved distribution and storage methods</li>
-        </ul>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            Co-founder, <a href="https://oc.tc" target="blank">Overcast Network</a>
-            <small>Jan 2012 - Sept 2016</small>
-        </p>
-        <p>
-            In high school my friend and I created a popular Minecraft gaming service which was
-            <a href="https://oc.tc/forums/topics/57c74b3cc296350fd600002b" target="blank"> acquired by and rebranded as Lifeboat Network</a>
-            in September, 2016. While working on Overcast I:
-        </p>
-        <ul>
-            <li>Created a unique multiplayer Minecraft experience (over 100k lines of code)</li>
-            <li>Scaled 100+ game servers to support 100k players per week; website to over 15MM page views per month; content distribution to over 100MM asset requests per month; and a MongoDB database to over 500GB and 1B documents</li>
-            <li>Monitoring of and deployment to 20 Ubuntu dedicated servers using Puppet</li>
-            <li>Designed and developed database models, an internal REST API, dynamic game
-server distribution, player load balancers, and Minecraft server software</li>
-        </ul>
-    </div>
-
-    <h3>Personal Projects</h3>
-
-    <div class="work">
-        <p class="title">
-            Overcast Network
-            <small class="github">
-                {% include _github.html repo="OvercastNetwork/OCN" %}
-            </small>
-        </p>
-        <p>
-            Overcast Network's website and backend are built using Ruby on Rails, MongoDB, CouchDB, Redis, and RabbitMQ. Recently released to the public, the project has a custom forum suite, player statistics and ranking system, customizable shop, dynamic server management and scaling tools, and a backend API which integrates with the Project Ares plugins.
-        </p>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            Project Ares
-            <small class="github">
-                {% include _github.html repo="OvercastNetwork/ProjectAres" %}
-            </small>
-        </p>
-        <p>
-            Project Ares is a complete Minecraft mini-game suite. Over four years in the making, anyone can turn a Minecraft level into a unique and fun mini-game by combining a wide variety of unique XML modules. Open source documentation and helpful tutorials are available at <a href="https://docs.oc.tc" taget="blank">docs.oc.tc</a>.
-        </p>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            SportBukkit
-            <small class="github">
-                {% include _github.html repo="OvercastNetwork/SportBukkit" %}
-            </small>
-        </p>
-        <p>
-            Minecraft's server software is distributed as obfuscated Java byte code. SportBukkit uses patch files to de-obfuscate, add APIs, and fix bugs in the Minecraft server software. Project Ares uses special APIs exposed by SportBukkit to improve gameplay.
-        </p>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            Prodeo Academy
-            <small class="github">
-                {% include _github.html repo="tonybruess/prodeoacademy.org" %}
-            </small>
-        </p>
-        <p>
-            Prodeo Academy is a new K-8, high-performing charter school in Minneapolis,
-MN with a mission to bridge the achievement gap. Their website was designed in cooperation with The Lawlor Group.
-        </p>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            Stanford Concert Network
-            <small class="github">
-                {% include _github.html repo="StanfordConcertNetwork/scn.stanford.edu" %}
-            </small>
-        </p>
-        <p>
-            Stanford Concert Network runs music events at Stanford University.
-        </p>
-    </div>
-
-
-    <div class="work">
-        <p class="title">
-            Stanford Dance Marathon
-            <small class="github">
-                {% include _github.html repo="StanfordDanceMarathon/stanforddm.org" %}
-            </small>
-        </p>
-        <p>
-            Stanford Dance Marathon is the largest student-run philanthropic event in the Bay Area. Every year in February, more than 2,000 students dance for 24 consecutive hours to raise money for a charitable health-focused organization.
-        </p>
-    </div>
-
-    <div class="work">
-        <p class="title">
-            My Website
-            <small class="github">
-                {% include _github.html repo="tonybruess/tonybruess.com" %}
-            </small>
-        </p>
-        <p>
-            You're here!
-        </p>
+<div class='modal fade' id='about'>
+    <div class='modal-dialog'>
+        <div class='modal-content'>
+            <div class='modal-header'>
+                <button class='close' data-dismiss='modal'>&times;</button>
+                <h4 class='modal-title'>About Tony</h4>
+            </div>
+            <div class='modal-body'>
+                <p>
+                    Hi there. My name is Tony Bruess. I'm a 20 year old entrepreneur.
+                </p>
+                <p>
+                    I co-founded the
+                    <a href='https://oc.tc' target='blank'>Overcast Network</a>,
+                    a popular Minecraft gaming service which was
+                    <a href='https://oc.tc/forums/topics/57c74b3cc296350fd600002b' target='blank'>acquired by and rebranded as Lifeboat Network</a>
+                    on September 1st, 2016.
+                </p>
+                <p>
+                    I'm a junior at
+                    <a href='http://stanford.edu' target='blank'>Stanford University</a>
+                    majoring in computer science. The past two summers I was a Site Reliability Engineer at
+                    <a href='https://slack.com'>Slack</a>
+                    and
+                    <a href='https://dropbox.com' target='blank'>Dropbox</a>.
+                </p>
+                <p>
+                    You can
+                    <a href='/assets/resume.pdf' target='blank'>check out my resume</a>
+                    or find me on the internet:
+                </p>
+                <p id='icons'>
+                    <a href='http://reddit.com/u/MonsieurApple' target='blank'>
+                        <i class='fa fa-2x fa-reddit-square' rel='tt-top' title='Reddit'></i>
+                    </a>
+                    <a href='https://linkedin.com/in/tonybruess' target='blank'>
+                        <i class='fa fa-2x fa-linkedin' rel='tt-top' title='LinkedIn'></i>
+                    </a>
+                    <a href='https://youtube.com/user/mrapplecomputer1' target='blank'>
+                        <i class='fa fa-2x fa-youtube-play' rel='tt-top' title='YouTube'></i>
+                    </a>
+                    <a href='http://twitch.tv/MonsieurApple' target='blank'>
+                        <i class='fa fa-2x fa-twitch' rel='tt-top' title='TwitchTV'></i>
+                    </a>
+                    <a href='https://facebook.com/tonybruess' target='blank'>
+                        <i class='fa fa-2x fa-facebook' rel='tt-top' title='Facebook'></i>
+                    </a>
+                    <a href='https://github.com/tonybruess' target='blank'>
+                        <i class='fa fa-2x fa-github' rel='tt-top' title='GitHub'></i>
+                    </a>
+                    <a href='https://twitter.com/tonybruess' target='blank'>
+                        <i class='fa fa-2x fa-twitter' rel='tt-top' title='Twitter'></i>
+                    </a>
+                    <a href='mailto:tony@oc.tc' target='blank'>
+                        <i class='fa fa-2x fa-send' rel='tt-top' title='tony@oc.tc'></i>
+                    </a>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
