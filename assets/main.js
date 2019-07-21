@@ -8,7 +8,9 @@ $(document).ready(function() {
         });
     }
 
-    $(".modal").on("show.bs.modal", function(e) {
-        $("[rel=tt-top]").tooltip("hide");
-    });
+    query = window.location.search
+    if (query.startsWith('?pride')) {
+        window.history.replaceState({}, document.title, "/");
+        $('.pride').show();
+    }
 });
