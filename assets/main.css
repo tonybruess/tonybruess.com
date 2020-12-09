@@ -1,78 +1,79 @@
 html, body {
-    min-height: 100%;
-    height: 100%;
-    background-color: #1D2436;
-}
-
-a:focus {
-    outline: none;
-}
-
-p {
-    font-size: 1.2em;
+  min-height: 100%;
+  height: 100%;
+  color: #ddd;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .wrapper {
-    position: relative;
-    width: 100%;
-    min-height: 100%;
-    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-       -moz-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-        -ms-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-         -o-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-            box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  background: #222 url(/assets/bg.jpg) no-repeat center;
+  background-size: cover;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      -moz-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      -ms-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+        -o-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
 }
 
-.circle {
-    margin-top: -100px;
+a {
+  color: #ddd;
+  text-decoration: none;
 }
 
-.circle a {
-    display: block;
-    color: #aaa;
+a:hover {
+  color: #fff;
 }
 
-.circle a i:hover {
-    color: #ccc;
-    cursor: pointer;
-}
-
-.center {
-    display: block;
-    width: 175px;
-    margin: 0 auto;
-}
-
-.circle a.r {
-    text-shadow: 0px 0px 10px #222;
-    text-align: center;
-    height: 0;
-    width: 56px;
-    margin: 0 auto;
-}
-
-.circle a.r i {
-    vertical-align: middle;
-    line-height: 56px;
-    font-size: 40px;
-}
-
-.center > img {
-    display: block;
-    width: 100%;
-    padding-top: 175px;
+a:focus {
+  outline: none;
 }
 
 #about {
-    display: block;
-    margin-top: 300px;
-    padding-bottom: 50px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  max-width: 400px;
 }
 
-#about #icons {
-    text-align: center;
+#about p {
+  font-size: 1.4em;
 }
 
-#about #icons a {
-    margin: 0 15px;
+#about h1 {
+  font-size: 3em;
+}
+
+#bio p {
+  margin-bottom: 0px;
+}
+
+#bio small {
+  font-size: 14px;
+}
+
+#caption {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+
+#caption p {
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: right;
+}
+
+#links {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+#links a {
+  margin: 10px;
+  font-size: 30px;
+  display: block;
 }
