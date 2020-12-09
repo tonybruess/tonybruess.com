@@ -47,6 +47,10 @@ a:focus {
   font-size: 3em;
 }
 
+#bio {
+  margin-top: 40px;
+}
+
 #bio p {
   margin-bottom: 0px;
 }
@@ -69,8 +73,12 @@ a:focus {
 
 #links {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  bottom: 30px;
+  left: 40px;
+}
+
+#links .section {
+  display: inline-block;
 }
 
 #links a {
