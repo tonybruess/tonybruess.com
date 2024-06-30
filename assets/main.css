@@ -77,12 +77,8 @@ a:focus {
   left: 40px;
 }
 
-#links .section {
-  display: inline-block;
-}
-
 #links a {
   margin: 10px;
   font-size: 30px;
-  display: block;
+  display: inline-block;
 }
